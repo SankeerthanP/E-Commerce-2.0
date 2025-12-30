@@ -86,7 +86,7 @@ const productsData = {
       stock: 100,
       description:
         "Powerful mid-range smartphone with 120Hz AMOLED display and 200MP camera.",
-      images: ["http://localhost:5000/images/RedmiNote13Pro.jpeg"],
+      images: ["/images/RedmiNote13Pro.jpeg"],
       specs: { Storage: "128GB", RAM: "8GB", Display: "6.67 inch" },
     },
     {
@@ -97,7 +97,7 @@ const productsData = {
       stock: 30,
       description:
         "Flagship Samsung phone with S Pen, 200MP camera, and Snapdragon 8 Gen 3.",
-      images: ["http://localhost:5000/images/SamsungGalaxyS24Ultra.jpeg"],
+      images: ["/images/SamsungGalaxyS24Ultra.jpeg"],
       specs: { Storage: "512GB", RAM: "12GB", Display: "6.8 inch" },
     },
     {
@@ -108,7 +108,7 @@ const productsData = {
       stock: 75,
       description:
         "Premium Android phone with Snapdragon 8 Gen 3 and fast charging.",
-      images: ["http://localhost:5000/images/OnePlus12.jpeg"],
+      images: ["/images/OnePlus12.jpeg"],
       specs: { Storage: "256GB", RAM: "12GB", Display: "6.82 inch" },
     },
     {
@@ -132,7 +132,7 @@ const productsData = {
       stock: 40,
       description:
         "Camera-focused flagship with Zeiss optics and MediaTek Dimensity 9300.",
-      images: ["http://localhost:5000/images/VivoX100Pro.png"],
+      images: ["/images/VivoX100Pro.png"],
       specs: { Storage: "512GB", RAM: "12GB", Display: "6.78 inch" },
     },
   ],
@@ -145,7 +145,7 @@ const productsData = {
       stock: 150,
       description:
         "Comfortable cotton hoodie perfect for casual wear. Available in multiple colors.",
-      images: ["http://localhost:5000/images/Men'sCottonHoodie.jpeg"],
+      images: ["/images/Men'sCottonHoodie.jpeg"],
       specs: { Material: "100% Cotton", Size: "M, L, XL", Color: "Multiple" },
     },
     {
@@ -261,7 +261,7 @@ const productsData = {
       stock: 300,
       description:
         "High capacity power bank with fast charging support for all devices.",
-      images: ["http://localhost:5000/images/PortablePowerBank20000mAh.webp"],
+      images: ["/images/PortablePowerBank20000mAh.webp"],
       specs: { Capacity: "20000mAh", Output: "18W", Ports: "2 USB-A, 1 USB-C" },
     },
     {
@@ -352,7 +352,7 @@ const productsData = {
       stock: 35,
       description:
         "Business laptop with Intel i7, 14-inch display, and premium build quality.",
-      images: ["http://localhost:5000/images/LenovoThinkPadX1.jpeg"],
+      images: ["/images/LenovoThinkPadX1.jpeg"],
       specs: { Processor: "Intel i7-1355U", RAM: "16GB", Storage: "512GB SSD" },
     },
     {
@@ -363,7 +363,7 @@ const productsData = {
       stock: 30,
       description:
         "Gaming laptop with RTX 4060, AMD Ryzen 7, and 144Hz display.",
-      images: ["http://localhost:5000/images/ASUSROGStrixG15.jpeg"],
+      images: ["/images/ASUSROGStrixG15.jpeg"],
       specs: { Processor: "AMD Ryzen 7", GPU: "RTX 4060", RAM: "16GB" },
     },
     {
@@ -374,7 +374,7 @@ const productsData = {
       stock: 100,
       description:
         "Budget-friendly laptop with Intel i5 and 15.6-inch display.",
-      images: ["http://localhost:5000/images/AcerAspire5.jpeg"],
+      images: ["/images/AcerAspire5.jpeg"],
       specs: { Processor: "Intel i5-1235U", RAM: "8GB", Storage: "256GB SSD" },
     },
   ],
@@ -437,7 +437,7 @@ const productsData = {
       price: 1999,
       stock: 180,
       description: "Durable sports shoes for kids with good grip and support.",
-      images: ["http://localhost:5000/images/Kids'SportsShoes.jpeg"],
+      images: ["/images/Kids'SportsShoes.jpeg"],
       specs: { Size: "UK 1-6", Material: "Synthetic", Type: "Sports" },
     },
     {
@@ -463,7 +463,7 @@ const productsData = {
       stock: 100,
       description:
         "10-piece non-stick cookware set with glass lids and ergonomic handles.",
-      images: ["http://localhost:5000/images/Non-StickCookwareSet.jpeg"],
+      images: ["/images/Non-StickCookwareSet.jpeg"],
       specs: {
         Pieces: "10",
         Material: "Non-Stick Coating",
@@ -478,7 +478,7 @@ const productsData = {
       stock: 80,
       description:
         "Automatic coffee maker with programmable timer and thermal carafe.",
-      images: ["http://localhost:5000/images/CoffeeMaker.jpeg"],
+      images: ["/images/CoffeeMaker.jpeg"],
       specs: { Capacity: "12 cups", Type: "Drip Coffee", Timer: "Yes" },
     },
     {
@@ -489,7 +489,7 @@ const productsData = {
       stock: 60,
       description:
         "Large capacity air fryer with digital display and multiple cooking modes.",
-      images: ["http://localhost:5000/images/AirFryer5.5L.jpeg"],
+      images: ["/images/AirFryer5.5L.jpeg"],
       specs: { Capacity: "5.5L", Power: "1500W", Presets: "8" },
     },
     {
@@ -500,7 +500,7 @@ const productsData = {
       stock: 70,
       description:
         "Powerful cordless vacuum cleaner with HEPA filter and long battery life.",
-      images: ["http://localhost:5000/images/VacuumCleaner.jpeg"],
+      images: ["/images/VacuumCleaner.jpeg"],
       specs: { Type: "Cordless", Battery: "60 min", Filter: "HEPA" },
     },
     {
@@ -523,7 +523,7 @@ const productsData = {
       price: 24999,
       stock: 20,
       description: "6-seater dining table with chairs, made from solid wood.",
-      images: ["http://localhost:5000/images/DiningTableSet.jpeg"],
+      images: ["/images/DiningTableSet.jpeg"],
       specs: { Seating: "6", Material: "Solid Wood", Style: "Modern" },
     },
   ],
@@ -575,7 +575,7 @@ const productsData = {
       stock: 600,
       description:
         "Fresh whole wheat flour, 2kg pack. Perfect for baking and cooking.",
-      images: ["http://localhost:5000/images/WholeWheatFlour2kg.jpeg"],
+      images: ["/images/WholeWheatFlour2kg.jpeg"],
       specs: { Weight: "2kg", Type: "Whole Wheat", GlutenFree: "No" },
     },
     {
@@ -585,7 +585,7 @@ const productsData = {
       price: 299,
       stock: 350,
       description: "Premium black tea leaves, 250g pack. Rich and aromatic.",
-      images: ["http://localhost:5000/images/BlackTea250g.jpeg"],
+      images: ["/images/BlackTea250g.jpeg"],
       specs: { Weight: "250g", Type: "Black Tea", Caffeine: "Yes" },
     },
     {
@@ -637,7 +637,7 @@ const productsData = {
       stock: 150,
       description:
         "Rechargeable electric toothbrush with 3 cleaning modes and timer.",
-      images: ["http://localhost:5000/images/electrictoothbrush.webp"],
+      images: ["/images/electrictoothbrush.webp"],
       specs: { Modes: "3", Battery: "Rechargeable", Timer: "Yes" },
     },
     {
@@ -702,7 +702,7 @@ const productsData = {
       stock: 100,
       description:
         "Adjustable dumbbell set, 10kg total weight, perfect for home workouts.",
-      images: ["http://localhost:5000/images/DumbbellSet10kg.jpg"],
+      images: ["/images/DumbbellSet10kg.jpg"],
       specs: { Weight: "10kg", Type: "Adjustable", Material: "Cast Iron" },
     },
     {
@@ -713,7 +713,7 @@ const productsData = {
       stock: 180,
       description:
         "5-piece resistance bands set with different resistance levels.",
-      images: ["http://localhost:5000/images/ResistanceBandsSet.jpeg"],
+      images: ["/images/ResistanceBandsSet.jpeg"],
       specs: { Pieces: "5", Resistance: "5-50lbs", Material: "Latex" },
     },
     {
@@ -754,7 +754,7 @@ const productsData = {
       stock: 120,
       description:
         "Smart fitness tracker with heart rate monitor, step counter, and sleep tracking.",
-      images: ["http://localhost:5000/images/FitnessTrackerWatch.jpeg"],
+      images: ["/images/FitnessTrackerWatch.jpeg"],
       specs: {
         Battery: "7 days",
         Features: "HR, Steps, Sleep",
@@ -770,7 +770,7 @@ const productsData = {
       price: 499,
       stock: 300,
       description: "Bestselling fiction novel, a must-read for book lovers.",
-      images: ["http://localhost:5000/images/TheGreatNovel.png"],
+      images: ["/images/TheGreatNovel.png"],
       specs: { Pages: "350", Language: "English", Format: "Paperback" },
     },
     {
@@ -807,7 +807,7 @@ const productsData = {
       stock: 150,
       description:
         "Detailed account of world history from ancient times to modern era.",
-      images: ["http://localhost:5000/images/HistoryOfWorld.jpeg"],
+      images: ["/images/HistoryOfWorld.jpeg"],
       specs: { Pages: "800", Language: "English", Format: "Hardcover" },
     },
     {
