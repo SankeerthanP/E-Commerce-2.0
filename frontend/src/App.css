@@ -1,0 +1,65 @@
+.bg-light {
+  background-color: #f5f7fb !important;
+}
+
+.card {
+  border-radius: 0.75rem;
+}
+
+.card img {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 0.5rem 1rem rgba(15, 23, 42, 0.08);
+}
+
+/* Navbar Enhancements */
+.navbar-brand:hover {
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link {
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--bs-primary) !important;
+}
+
+.nav-link.active {
+  color: var(--bs-primary) !important;
+  font-weight: 500;
+}
+
+/* Footer Link Hover */
+footer a {
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--bs-primary) !important;
+}
+
+/* Search Input Focus */
+.form-control:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Footer Subheading */
+.footer-subheading {
+  /* visible by default as a soft half-white */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-brand-container:hover .footer-subheading {
+  /* keep hover behaviour as no-op so it remains visible */
+  opacity: 1;
+}
