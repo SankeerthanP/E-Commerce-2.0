@@ -20,7 +20,9 @@ import AdminDashboardPage from "./pages/admin/AdminDashboardPage.jsx";
 import AdminProductsPage from "./pages/admin/AdminProductsPage.jsx";
 import AdminProductEditPage from "./pages/admin/AdminProductEditPage.jsx";
 import AdminOrdersPage from "./pages/admin/AdminOrdersPage.jsx";
+
 import AdminFeedbackPage from "./pages/admin/AdminFeedbackPage.jsx";
+import AdminUsersPage from "./pages/admin/AdminUsersPage.jsx";
 import { CartProvider } from "./context/CartContext.jsx";
 import "./App.css";
 
@@ -144,6 +146,22 @@ function App() {
               element={
                 <AdminRoute>
                   <AdminFeedbackPage />
+                </AdminRoute>
+              }
+            />
+            <Route
+              path="/admin/feedback"
+              element={
+                <AdminRoute>
+                  <AdminFeedbackPage />
+                </AdminRoute>
+              }
+            />
+            <Route
+              path="/admin/users"
+              element={
+                <AdminRoute>
+                  <AdminUsersPage />
                 </AdminRoute>
               }
             />

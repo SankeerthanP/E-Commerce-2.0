@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Row, Col, Card, Spinner } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import api from "../../services/apiClient.js";
 
 const AdminDashboardPage = () => {
@@ -10,15 +11,17 @@ const AdminDashboardPage = () => {
     const load = async () => {
       setLoading(true);
       try {
-        const [products, orders, feedback] = await Promise.all([
+        const [products, orders, feedback, users] = await Promise.all([
           api.get("/products"),
           api.get("/orders"),
           api.get("/feedback"),
+          api.get("/admin/users"),
         ]);
         setSummary({
           products: products.data.length,
           orders: orders.data.length,
           feedback: feedback.data.length,
+          users: users.data.length,
           recentOrders: orders.data.slice(0, 5),
         });
       } finally {
@@ -39,8 +42,9 @@ const AdminDashboardPage = () => {
   return (
     <>
       <h2 className="h4 mb-3">Admin dashboard</h2>
+
       <Row className="g-3 mb-3">
-        <Col md={4}>
+        <Col md={3}>
           <Card className="shadow-sm">
             <Card.Body>
               <Card.Title>Total products</Card.Title>
@@ -48,7 +52,7 @@ const AdminDashboardPage = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4}>
+        <Col md={3}>
           <Card className="shadow-sm">
             <Card.Body>
               <Card.Title>Total orders</Card.Title>
@@ -56,11 +60,20 @@ const AdminDashboardPage = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4}>
+        <Col md={3}>
           <Card className="shadow-sm">
             <Card.Body>
               <Card.Title>Feedback</Card.Title>
               <Card.Text className="display-6">{summary.feedback}</Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={3}>
+          <Card className="shadow-sm border-primary">
+            <Card.Body>
+              <Card.Title>Users</Card.Title>
+              <Card.Text className="display-6">{summary.users}</Card.Text>
+              <Link to="/admin/users" className="stretched-link"></Link>
             </Card.Body>
           </Card>
         </Col>

@@ -167,6 +167,14 @@ const Navbar = () => {
                   </Nav.Link>
                   <Nav.Link
                     as={NavLink}
+                    to="/admin/users"
+                    className="d-flex align-items-center"
+                  >
+                    <i className="bi bi-people me-1"></i>
+                    <span className="d-none d-lg-inline">Users</span>
+                  </Nav.Link>
+                  <Nav.Link
+                    as={NavLink}
                     to="/admin/products"
                     className="d-flex align-items-center"
                   >
