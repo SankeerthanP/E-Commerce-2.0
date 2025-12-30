@@ -19,16 +19,8 @@
             "destination": "/backend/server.js"
         },
         {
-            "source": "/assets/(.*)",
-            "destination": "/frontend/assets/$1"
-        },
-        {
-            "source": "/(.*)\\.(ico|png|jpg|jpeg|svg|xml|txt)",
-            "destination": "/frontend/$1"
-        },
-        {
-            "source": "/(.*)",
-            "destination": "/frontend/index.html"
+            "source": "/((?!api/|images/|assets/|favicon.ico).*)",
+            "destination": "/index.html"
         }
     ]
 }
